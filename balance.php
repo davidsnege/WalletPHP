@@ -7,4 +7,4 @@ function getBalance($address) {
 $balance = getBalance('1GPXGzrxaPEA5G85rcmt8XRvUvkvNxNsYK');
 
 $BTC = $balance / 100000000 ;
-echo 'Address BTC Balance: ' . $BTC;
+echo 'Blc: ' . $BTC;
