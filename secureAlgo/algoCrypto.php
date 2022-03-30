@@ -13,7 +13,7 @@
         $fullPhraseSecureRecover .= " ".$file[rand(0, $wCount - 1)];
     }
     // Probe the phrase to make sure it is unique
-    echo 'Secure Phrase Generated: '.$fullPhraseSecureRecover;
+    echo '<pre>Secure Phrase Generated: '.$fullPhraseSecureRecover;
     echo '<br>';
 // ********************************************************************************************************
 // CREATE A HASH PRASE SECURE (Its impossible to recover the phrase, but you can use the hash)
