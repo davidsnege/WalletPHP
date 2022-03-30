@@ -13,7 +13,7 @@
         $fullPhraseSecureRecover .= " ".$file[rand(0, $wCount - 1)];
     }
     // Probe the phrase to make sure it is unique
-    echo '<pre>Secure Phrase Generated: '.$fullPhraseSecureRecover;
+    echo '<pre>Secure Phrase Generated: <br>'.$fullPhraseSecureRecover;
     echo '<br>';
 // ********************************************************************************************************
 // CREATE A HASH PRASE SECURE (Its impossible to recover the phrase, but you can use the hash)
@@ -25,9 +25,9 @@
     // Generate a Hash to save in database a secure phrase (It is impossible to recover the phrase)
     $myHash = password_hash($fullPhraseSecureRecover, PASSWORD_BCRYPT, $opciones);
     // Probe the hash
-    echo 'Secure Phrase Conferenc: '.$fullPhraseSecureRecover;    
+    echo 'Secure Phrase Conference: <br>'.$fullPhraseSecureRecover;    
     echo '<br>';
-    echo 'Secure Hash Gen. Viewer: '.$myHash;
+    echo 'Secure Hash Gen. Viewer: <br>'.$myHash;
     echo '<br>';
 // ********************************************************************************************************
 // VERIFY A HASH PRASE SECURE  (thats the way to verify the phrase)
@@ -36,11 +36,11 @@
     if(password_verify($fullPhraseSecureRecover, $myHash)){
         // Your Phrase is compatible with decrypt the Hash
         echo "<br> YOUR SECURE PHRASE IS VERIFYED "; 
-        echo '- Secure Phrase Conferenc: '.$fullPhraseSecureRecover;  
+        echo '- Secure Phrase Conferenc: <br>'.$fullPhraseSecureRecover;  
     }else{
         // Your Phrase is not compatible with decrypt the Hash
         echo "<br> YOUR PHRASE GENERATE A INVALID KEY ";
-        echo '- Secure Phrase Conferenc: '.$fullPhraseSecureRecover; 
+        echo '- Secure Phrase Conferenc: <br>'.$fullPhraseSecureRecover; 
     }
 // ********************************************************************************************************
 // OK the magic is maked, now you can use the hash to protect your data
