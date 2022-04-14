@@ -14,3 +14,4 @@ Its a collection to wallets
 
 El archivo Json deve ser indecifrable para cualquiera que intente leer el json mismo que tenga el archivo para leer y estudiar sus datos.
 
+$ php -S localhost:8000 -t foo/
